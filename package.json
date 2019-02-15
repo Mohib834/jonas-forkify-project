@@ -1,0 +1,22 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohib834/jonas-forkify-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohib834/jonas-forkify-project/issues"
+  },
+  "homepage": "https://github.com/Mohib834/jonas-forkify-project#readme",
+  "devDependencies": {
+    "webpack": "^4.29.3"
+  }
+}
