@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry:'./src/js/index.js',
+	entry:['@babel/polyfill','./src/js/index.js'],
 	output:{
 		path:path.resolve(__dirname, 'dist'),
 		filename:'js/bundle.js'
@@ -10,6 +10,19 @@ module.exports = {
 	devServer:{
 		contentBase:'./dist' //For Live Server + for creating instances without the actual file/ if file require use npm run dev at last
 	},
+
+	module:{ //loaders
+		rules:[
+			{
+				test:/\.js$/,
+				exclude:/node_modules/,
+				use:{
+					loader:'babel-loader'
+				}
+			}
+		]
+	},
+
 	plugins:[ //For Installing Additional Plugin
 		new HtmlWebpackPlugin({	//This Plugin is for copying index.html file from src to final folder dist
 			filename:'index.html',
