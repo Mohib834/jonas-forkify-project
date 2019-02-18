@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"webpack --mode development",
-    "build":"webpack --mode production",
-    "start":"webpack-dev-server --mode development --open"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,15 @@
   },
   "homepage": "https://github.com/Mohib834/jonas-forkify-project#readme",
   "devDependencies": {
-    "webpack": "^4.29.3"
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
   }
 }
