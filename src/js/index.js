@@ -1,4 +1,9 @@
-// Global app controller
-import num from './test.js';
-const x = 23;
-console.log(`I imported ${num} and variable x is ${x}`)
+//Controller
+
+import Search from './models/Search';
+
+const state = {};
+
+document.querySelector('.search').addEventListener('submit',e => {
+	e.preventDefault();
+})

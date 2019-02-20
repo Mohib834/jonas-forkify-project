@@ -11,16 +11,14 @@ module.exports = {
 		contentBase:'./dist' //For Live Server + for creating instances without the actual file/ if file require use npm run dev at last
 	},
 
-	module:{ //loaders
-		rules:[
-			{
-				test:/\.js$/,
-				exclude:/node_modules/,
-				use:{
-					loader:'babel-loader'
-				}
+	module:{
+		rules:[{
+			test:/\.js$/,
+			exclude:/node_module/,
+			use:{
+				loader:'babel-loader'
 			}
-		]
+		}]
 	},
 
 	plugins:[ //For Installing Additional Plugin
