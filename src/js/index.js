@@ -32,3 +32,12 @@ elements.searchForm.addEventListener('submit',e => {
 	controlSearch();
 })
 
+//using event delegation for pages button
+elements.searchResPages.addEventListener('click', e => {
+	const btn = e.target.closest('.btn-inline') //closest method 
+	if(btn){
+		const goToPage = parseInt(btn.dataset.goto,10); //base ten
+		searchView.clearRecipeList();
+		searchView.renderResults(state.search.recipes,goToPage);
+	}
+})
