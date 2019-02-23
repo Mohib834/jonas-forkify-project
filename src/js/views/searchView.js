@@ -10,6 +10,11 @@ export const clearRecipeList = () => {
 	elements.searchResList.innerHTML = '';
 }
 
+//Will work on this algorithm later
+const limitRecipeTitle = (title, limit = 17) => {
+}
+//=====
+
 const renderRecipe = recipe => {
 	const markup = `
 		<li>
