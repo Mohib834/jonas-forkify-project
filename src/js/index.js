@@ -6,6 +6,9 @@ import * as searchView from './views/searchView';
 
 const state = {};
 
+/*
+	Search Controller
+*/
 const controlSearch = async () => {
 	//1) Get query from view
 	const query = searchView.getInput();
@@ -70,7 +73,7 @@ const controlRecipe = async () => {
 			state.recipe.calcServings();
 
 			//Rencder Recipe
-			console.log(state.recipe)
+			state.recipe.parseIngredients()
 
 		} catch(err){
 			alert(err);
